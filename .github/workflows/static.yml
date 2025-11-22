@@ -31,22 +31,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: List Website folder (debug)
-        run: |
-          echo "Listing repository root"
-          ls -la
-          echo "Listing ./Website contents"
-          ls -la Website || true
-          echo "Recursive find (top 3 levels)"
-          find Website -maxdepth 3 -type f -print || true
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload Website folder
-          # Upload contents of Website so files (like index.html) are at artifact root
-          path: './Website/**'
+          path: './Website'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
