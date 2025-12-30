@@ -1,30 +1,21 @@
+
 function CTASection() {
   return (
     <section id="cta" className="section-border py-12">
-      <div className="px-8 text-center">
+      <div className="px-8 text-center max-w-2xl mx-auto">
         <h2 className="mb-3 text-3xl font-bold tracking-tight text-slate-900">
-          Stay in the loop
+          Get Involved
         </h2>
-        <p className="mx-auto mb-6 max-w-xl text-sm text-slate-600">
-          Get notified when Controlable launches, plus exclusive updates on intelligent edge monitoring.
+        <p className="mx-auto mb-6 max-w-xl text-base text-slate-600">
+          We are currently working with launching customers and industrial partners.<br /><br />
+          Organisations interested in early pilots, strategic collaboration or platform integration are invited to get in touch.
         </p>
-        <form className="mx-auto mb-3 flex max-w-md flex-col gap-2 sm:flex-row">
-          <input
-            type="email"
-            required
-            placeholder="your@company.com"
-            className="flex-1 rounded-lg border border-slate-300 bg-slate-50 px-4 py-2 text-sm text-slate-900 transition placeholder:text-slate-400 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-emerald-600"
-          />
-          <button
-            type="submit"
-            className="fancy-button whitespace-nowrap rounded-lg bg-emerald-600 px-5 py-2 text-sm font-semibold text-white transition hover:bg-emerald-700 hover:shadow-lg"
-          >
-            Subscribe
-          </button>
-        </form>
-        <p className="text-xs text-slate-500">
-          We respect your inbox. Unsubscribe at any time.
-        </p>
+        <a
+          href="mailto:info@controlable.ai"
+          className="inline-block fancy-button rounded-lg bg-emerald-600 px-8 py-3 text-base font-semibold text-white transition hover:bg-emerald-700 hover:shadow-lg"
+        >
+          info@controlable.ai
+        </a>
       </div>
     </section>
   )

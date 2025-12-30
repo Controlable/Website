@@ -11,16 +11,22 @@ function Hero() {
             className="float subtle-glow mx-auto mb-6 size-24"
           />
           <h1 className="mb-2 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
-            Controlable
+            Industrial Edge Intelligence
           </h1>
           <p className="text-lg font-medium text-emerald-700">
-            Intelligent machine monitoring & power management
+            Realtime machine insight, without complexity or lock-in
           </p>
         </div>
-        <p className="mx-auto mb-8 max-w-2xl text-sm leading-relaxed text-slate-600">
-          Monitor your machines in real-time, predict maintenance before
-          failures occur, and optimize power consumption. Complete visibility
-          and control.
+        <p className="mx-auto mb-8 max-w-2xl text-base leading-relaxed text-slate-600">
+          We are building a new generation of industrial intelligence: scalable,
+          affordable and designed to run directly at the edge — close to
+          machines, processes and operations.
+          <br />
+          <br />
+          Our platform enables OEMs, manufacturers and asset owners to gain
+          real-time insight into machine health, energy behaviour and
+          operational performance — without complex IT projects or dependency on
+          large cloud platforms.
         </p>
         <div className="mb-6 flex flex-col justify-center gap-3 sm:flex-row">
           <a
@@ -36,9 +42,6 @@ function Hero() {
             Learn more →
           </a>
         </div>
-        <p className="text-xs text-slate-500">
-          Currently in beta. Early access available.
-        </p>
       </div>
     </section>
   )

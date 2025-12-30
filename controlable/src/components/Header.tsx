@@ -12,9 +12,9 @@ function Header() {
         <div className="flex items-center gap-3">
           <button
             id="themeToggle"
-            className="rounded-lg p-2 text-white transition duration-500 ease-in-out
+            className="rounded-lg p-2 text-white transition duration-300 ease-in-out
              hover:scale-110 hover:shadow-[0_0_8px_#fff,0_0_16px_#fff]
-             dark:text-blue-400 dark:hover:shadow-[0_0_4px_#0ff,0_0_10px_#0ff]"
+             dark:text-blue-400 dark:hover:shadow-[0_0_px_#0ff,0_0_20px_#0ff]"
             type="button"
           >
             <svg
