@@ -2,19 +2,21 @@ import logo from 'assets/logo.png'
 
 function Header() {
   return (
-    <header className="sticky top-0 z-20 border-b border-slate-200 ">
+    <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/80 backdrop-blur-md dark:border-slate-800 dark:bg-slate-900/80">
       <div className="mx-auto flex h-14 max-w-7xl items-center justify-between bg-inherit px-6">
         <div className="flex items-center gap-2">
           <img src={logo} alt="Controlable logo" className="size-6" />
-          <span className="text-sm font-semibold ">Controlable</span>
+          <span className="text-sm font-semibold dark:text-slate-200">
+            Controlable
+          </span>
         </div>
         <nav className="hidden items-center gap-8 text-sm md:flex"></nav>
         <div className="flex items-center gap-3">
           <button
             id="themeToggle"
-            className="rounded-lg p-2 text-white transition duration-300 ease-in-out
-             hover:scale-110 hover:shadow-[0_0_8px_#fff,0_0_16px_#fff]
-             dark:text-blue-400 dark:hover:shadow-[0_0_px_#0ff,0_0_20px_#0ff]"
+            className="rounded-lg p-2 text-slate-500 transition duration-300 ease-in-out
+             hover:scale-110 hover:text-slate-700
+             dark:text-blue-400 dark:hover:text-blue-300"
             type="button"
           >
             <svg

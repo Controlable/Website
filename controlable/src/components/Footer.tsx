@@ -5,7 +5,7 @@ interface FooterProps {
 function Footer({ year }: FooterProps) {
   return (
     <footer className="section-border p-8 text-center">
-      <p className="text-xs text-slate-500">
+      <p className="text-xs text-slate-500 dark:text-slate-400">
         © <span>{year}</span> Controlable Systems. All rights reserved.
       </p>
     </footer>

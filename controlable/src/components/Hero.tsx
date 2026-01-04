@@ -10,14 +10,14 @@ function Hero() {
             alt="Controlable"
             className="float subtle-glow mx-auto mb-6 size-24"
           />
-          <h1 className="mb-2 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
+          <h1 className="mb-2 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl dark:text-slate-100">
             Industrial Edge Intelligence
           </h1>
-          <p className="text-lg font-medium text-emerald-700">
+          <p className="text-lg font-medium text-emerald-700 dark:text-emerald-400">
             Realtime machine insight, without complexity or lock-in
           </p>
         </div>
-        <p className="mx-auto mb-8 max-w-2xl text-base leading-relaxed text-slate-600">
+        <p className="mx-auto mb-8 max-w-2xl text-base leading-relaxed text-slate-600 dark:text-slate-300">
           We are building a new generation of industrial intelligence: scalable,
           affordable and designed to run directly at the edge — close to
           machines, processes and operations.
@@ -37,7 +37,7 @@ function Hero() {
           </a>
           <a
             href="#features"
-            className="fancy-button rounded-lg border-2 border-emerald-600 px-6 py-2 text-sm font-semibold text-emerald-700 transition hover:bg-emerald-50"
+            className="fancy-button rounded-lg border-2 border-emerald-600 px-6 py-2 text-sm font-semibold text-emerald-700 transition hover:bg-emerald-50 dark:border-emerald-500 dark:text-emerald-400 dark:hover:bg-emerald-900/30"
           >
             Learn more →
           </a>
