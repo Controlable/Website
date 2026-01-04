@@ -87,6 +87,10 @@ function LandingPage() {
         .float-icon-2 { animation: float-slow 10s ease-in-out infinite; top: 30%; right: 8%; animation-delay: 1s; }
         .float-icon-3 { animation: float-slow 12s ease-in-out infinite; top: 60%; left: 10%; animation-delay: 2s; }
         .float-icon-4 { animation: float-slow 11s ease-in-out infinite; top: 50%; right: 5%; animation-delay: 1.5s; }
+        .float-icon-5 { animation: float-slow 9s ease-in-out infinite; top: 80%; left: 15%; animation-delay: 0.5s; }
+        .float-icon-6 { animation: float-slow 13s ease-in-out infinite; top: 75%; right: 10%; animation-delay: 2.5s; }
+        .float-icon-7 { animation: float-slow 10.5s ease-in-out infinite; top: 20%; left: 25%; animation-delay: 1.2s; }
+        .float-icon-8 { animation: float-slow 11.5s ease-in-out infinite; top: 40%; right: 25%; animation-delay: 1.8s; }
         .subtle-glow { animation: subtle-glow 4s ease-in-out infinite; }
         .main-container { width: 100%; max-width: 1400px; margin: 0 auto; position: relative; z-index: 10; }
         .fancy-button { position: relative; overflow: hidden; transition: all 0.3s ease; }
