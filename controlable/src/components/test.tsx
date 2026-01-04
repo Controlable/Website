@@ -15,7 +15,7 @@ describe('<App />', () => {
 
     expect(
       screen.getByText(
-        /This is a boilerplate build with Vite, React 18, TypeScript, Vitest, Testing Library, TailwindCSS 3, Eslint and Prettier./i
+        /Monitor your machines in real-time, predict maintenance before failures occur, and optimize power consumption. Complete visibility and control./i
       )
     ).toBeInTheDocument()
 
