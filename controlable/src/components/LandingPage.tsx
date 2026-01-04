@@ -88,8 +88,7 @@ function LandingPage() {
         .float-icon-3 { animation: float-slow 12s ease-in-out infinite; top: 60%; left: 10%; animation-delay: 2s; }
         .float-icon-4 { animation: float-slow 11s ease-in-out infinite; top: 50%; right: 5%; animation-delay: 1.5s; }
         .subtle-glow { animation: subtle-glow 4s ease-in-out infinite; }
-        .main-container { background: white; border-radius: 12px; width: 90%; max-width: 820px; margin: 24px auto; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 10px 40px rgba(0, 0, 0, 0.06); border: 1px solid #e2e8f0; position: relative; z-index: 10; }
-        html.dark .main-container { background: #1e293b; border-color: #475569; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 10px 40px rgba(0, 0, 0, 0.4); }
+        .main-container { width: 100%; max-width: 1400px; margin: 0 auto; position: relative; z-index: 10; }
         .fancy-button { position: relative; overflow: hidden; transition: all 0.3s ease; }
         .fancy-button::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent); transition: left 0.5s; }
         .fancy-button:hover::before { left: 100%; }

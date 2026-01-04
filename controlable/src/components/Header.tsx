@@ -3,10 +3,10 @@ import logo from 'assets/logo.png'
 function Header() {
   return (
     <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/80 backdrop-blur-md dark:border-slate-800 dark:bg-slate-900/80">
-      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between bg-inherit px-6">
-        <div className="flex items-center gap-2">
-          <img src={logo} alt="Controlable logo" className="size-6" />
-          <span className="text-sm font-semibold dark:text-slate-200">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between bg-inherit px-8">
+        <div className="flex items-center gap-3">
+          <img src={logo} alt="Controlable logo" className="size-8" />
+          <span className="text-lg font-bold tracking-tight text-slate-900 dark:text-slate-100">
             Controlable
           </span>
         </div>
