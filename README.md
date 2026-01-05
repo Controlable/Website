@@ -1,8 +1,8 @@
-![reactjs-vite-tailwindcss-boilerplate](https://user-images.githubusercontent.com/16243531/217138979-b854309c-4742-4275-a705-f9fec5158217.jpg)
+# Controlable Website
 
-# React Tailwindcss Boilerplate build with Vite
+A modern React + Tailwind CSS website built with Vite, TypeScript, and deployed on production with Nginx.
 
-This is a boilerplate build with Vite, React 18, TypeScript, Vitest, Testing Library, TailwindCSS 3, Eslint and Prettier.
+**Website:** Controlable - A SaaS platform for real-time monitoring and insights
 
 ## What is inside?
 
@@ -17,63 +17,136 @@ This project uses many tools like:
 - [Eslint](https://eslint.org)
 - [Prettier](https://prettier.io)
 
-## Getting Started
+## Getting Started Locally
 
-### Install
-
-Create the project.
+### Install Dependencies
 
 ```bash
-pnpm dlx degit joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate my-app
+npm install
 ```
 
-Access the project directory.
+### Development Server
+
+Serve with hot reload at <http://localhost:5173>:
 
 ```bash
-cd my-app
+npm run dev
 ```
 
-Install dependencies.
+### Build for Production
 
 ```bash
-pnpm install
+npm run build
 ```
 
-Serve with hot reload at <http://localhost:5173>.
+## Deployment
+
+### Prerequisites
+
+- Server with SSH access
+- Git installed
+- Node.js and npm installed
+- Nginx installed
+
+### Automatic Deployment
+
+The deployment script is located at `/root/deploy.sh` and handles:
+
+1. **Git Pull** - Fetches latest changes from the main branch
+2. **Dependencies** - Installs/updates npm packages
+3. **Build** - Creates optimized production build
+4. **Serve** - Nginx automatically serves from `/root/website/dist`
+
+**To deploy:**
 
 ```bash
-pnpm run dev
+/root/deploy.sh
 ```
+
+### Manual Deployment Steps
+
+If you need to deploy manually:
+
+```bash
+# 1. Navigate to website directory
+cd /root/website
+
+# 2. Pull latest code
+git pull origin main
+
+# 3. Install dependencies
+npm install
+
+# 4. Build project
+npm run build
+
+# 5. Reload Nginx (if needed)
+nginx -s reload
+```
+
+### Production URLs
+
+- **Web Root:** `/root/website/dist`
+- **Nginx Config:** `/etc/nginx/sites-available/website`
+- **Logs:** `/var/log/nginx/`
+- **Status:** `systemctl status nginx`
+
+### Nginx Configuration
+
+Nginx is configured as a reverse proxy serving static files with:
+- SPA routing (all requests go to index.html)
+- Asset caching (365 days for JS/CSS/images)
+- Gzip compression
+- HTTP/2 support
+
+### Restarting Services
+
+```bash
+# Restart Nginx
+systemctl restart nginx
+
+# Reload Nginx (zero-downtime)
+nginx -s reload
+```
+
+## Local Development Scripts
 
 ### Lint
 
 ```bash
-pnpm run lint
+npm run lint
 ```
 
 ### Typecheck
 
 ```bash
-pnpm run typecheck
-```
-
-### Build
-
-```bash
-pnpm run build
+npm run typecheck
 ```
 
 ### Test
 
 ```bash
-pnpm run test
+npm run test
 ```
 
 View and interact with your tests via UI.
 
 ```bash
-pnpm run test:ui
+npm run test:ui
 ```
+
+## Technologies
+
+This project uses many tools like:
+
+- [Vite](https://vitejs.dev)
+- [ReactJS](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org)
+- [Vitest](https://vitest.dev)
+- [Testing Library](https://testing-library.com)
+- [Tailwindcss](https://tailwindcss.com)
+- [Eslint](https://eslint.org)
+- [Prettier](https://prettier.io)
 
 ## License
 
