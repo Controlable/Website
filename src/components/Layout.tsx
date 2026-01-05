@@ -15,7 +15,7 @@ declare global {
 const year = new Date().getFullYear()
 
 export default function Layout() {
-  const { hash } = useLocation()
+  const { hash, pathname } = useLocation()
 
   useEffect(() => {
     if (hash) {
@@ -72,13 +72,13 @@ export default function Layout() {
     setTimeout(() => {
       const reveals = document.querySelectorAll('.reveal')
       reveals.forEach((reveal) => observer.observe(reveal))
-    }, 100)
+    }, 0)
 
     return () => {
       themeToggle?.removeEventListener('click', handleThemeToggle)
       observer.disconnect()
     }
-  }, [])
+  })
 
   return (
     <div
