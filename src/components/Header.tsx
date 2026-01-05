@@ -1,22 +1,31 @@
+/* eslint-disable prettier/prettier */
+import { Link } from 'react-router-dom'
 import logo from 'assets/logo.png'
+import content from '../data/content.json'
 
 function Header() {
+  const { header } = content
   return (
     <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/80 backdrop-blur-md dark:border-slate-800 dark:bg-slate-900/80">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between bg-inherit px-8">
-        <div className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3">
           <img src={logo} alt="Controlable logo" className="size-8" />
           <span className="text-lg font-bold tracking-tight text-slate-900 dark:text-slate-100">
-            Controlable
+            {header.title}
           </span>
-        </div>
-        <nav className="hidden items-center gap-8 text-sm md:flex"></nav>
+        </Link>
+        <nav className="hidden items-center gap-8 text-sm md:flex">
+          <a href="/#value-delivered" className="font-medium text-slate-600 hover:text-accent dark:text-slate-300 dark:hover:text-accent-text-dark">{header.nav.value}</a>
+          <a href="/#platform" className="font-medium text-slate-600 hover:text-accent dark:text-slate-300 dark:hover:text-accent-text-dark">{header.nav.platform}</a>
+          <a href="/#team" className="font-medium text-slate-600 hover:text-accent dark:text-slate-300 dark:hover:text-accent-text-dark">{header.nav.team}</a>
+          <Link to="/contact" className="font-medium text-slate-600 hover:text-accent dark:text-slate-300 dark:hover:text-accent-text-dark">{header.nav.contact}</Link>
+        </nav>
         <div className="flex items-center gap-3">
           <button
             id="themeToggle"
             className="rounded-lg p-2 text-slate-500 transition duration-300 ease-in-out
              hover:scale-110 hover:text-slate-700
-             dark:text-blue-400 dark:hover:text-blue-300"
+             dark:text-accent-text-dark dark:hover:text-accent-text-dark-hover"
             type="button"
           >
             <svg

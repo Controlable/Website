@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
@@ -8,6 +9,16 @@ module.exports = {
           DEFAULT: '#3b82f6', // blue-500
           hover: '#2563eb', // blue-600
           foreground: '#ffffff'
+        },
+        accent: {
+          DEFAULT: '#2563eb', // blue-600
+          hover: '#1d4ed8', // blue-700
+          light: '#eff6ff', // blue-50
+          text: '#1e40af', // blue-800
+          'text-dark': '#60a5fa', // blue-400
+          'text-dark-hover': '#93c5fd', // blue-300
+          'border-dark': '#3b82f6', // blue-500
+          highlight: '#1e3a8a' // blue-900
         },
         secondary: {
           DEFAULT: '#64748b', // slate-500

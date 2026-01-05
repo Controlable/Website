@@ -1,3 +1,149 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  section[id] {
+    scroll-margin-top: 6rem;
+  }
+}
+
+@layer components {
+  .main-container {
+    @apply w-full max-w-[1600px] mx-auto relative z-10;
+  }
+
+  .fancy-button {
+    @apply relative overflow-hidden transition-all duration-300 ease-out;
+  }
+
+  .fancy-button::before {
+    content: '';
+    @apply absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-[left] duration-500;
+  }
+
+  .fancy-button:hover::before {
+    @apply left-full;
+  }
+
+  .section-border {
+    @apply border-t border-slate-200 dark:border-slate-700;
+  }
+
+  .float-icon {
+    @apply fixed opacity-[0.08] z-0 pointer-events-none text-accent dark:opacity-[0.06];
+  }
+  
+  /* 3D Globe Utilities */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .rotate-x-60 {
+    transform: rotateX(60deg);
+  }
+  .rotate-y-60 {
+    transform: rotateY(60deg);
+  }
+  .-rotate-y-60 {
+    transform: rotateY(-60deg);
+  }
+}
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 20s linear infinite;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .animate-fade-in-up-delay-1 {
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+  }
+  
+  .animate-fade-in-up-delay-2 {
+    animation: fadeInUp 0.8s ease-out 0.4s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-subtle-glow {
+    animation: subtle-glow 4s ease-in-out infinite;
+  }
+}
+
+/* Custom Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotateZ(0deg); }
+  50% { transform: translateY(-20px) rotateZ(5deg); }
+}
+
+@keyframes subtle-glow {
+  0%, 100% { filter: drop-shadow(0 0 8px rgba(37, 99, 235, 0.3)); }
+  50% { filter: drop-shadow(0 0 16px rgba(37, 99, 235, 0.5)); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Floating Icons Positioning & Animation */
+.float-icon-1 { animation: float-slow 8s ease-in-out infinite; top: 10%; left: 5%; }
+.float-icon-2 { animation: float-slow 10s ease-in-out infinite; top: 30%; right: 8%; animation-delay: 1s; }
+.float-icon-3 { animation: float-slow 12s ease-in-out infinite; top: 60%; left: 10%; animation-delay: 2s; }
+.float-icon-4 { animation: float-slow 11s ease-in-out infinite; top: 50%; right: 5%; animation-delay: 1.5s; }
+.float-icon-5 { animation: float-slow 9s ease-in-out infinite; top: 80%; left: 15%; animation-delay: 0.5s; }
+.float-icon-6 { animation: float-slow 13s ease-in-out infinite; top: 75%; right: 10%; animation-delay: 2.5s; }
+.float-icon-7 { animation: float-slow 10.5s ease-in-out infinite; top: 20%; left: 25%; animation-delay: 1.2s; }
+.float-icon-8 { animation: float-slow 11.5s ease-in-out infinite; top: 40%; right: 25%; animation-delay: 1.8s; }
+
+/* Scroll Animation Class */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

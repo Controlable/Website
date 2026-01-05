@@ -1,6 +1,9 @@
 import logo from 'assets/logo.png'
+import realTimeInsightsImage from '../assets/frontpage/lightMode/Real time Insigts image 5246c0ab-4652-4dd8-9861-57777369eed1.png'
+import content from '../data/content.json'
 
 function Hero() {
+  const { hero } = content
   return (
     <section className="py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-8 text-center">
@@ -8,39 +11,42 @@ function Hero() {
           <img
             src={logo}
             alt="Controlable"
-            className="float subtle-glow mx-auto mb-8 size-24 lg:size-32"
+            className="animate-float animate-subtle-glow mx-auto mb-8 size-24 lg:size-32"
           />
-          <h1 className="mb-4 text-4xl font-bold tracking-tight text-slate-900 md:text-6xl lg:text-7xl dark:text-slate-100">
-            Industrial Edge Intelligence
+          <h1 className="animate-fade-in-up mb-4 text-3xl font-bold tracking-tight text-accent md:text-5xl lg:text-6xl">
+            {hero.title}
           </h1>
-          <p className="text-xl font-medium text-emerald-700 md:text-2xl dark:text-emerald-400">
-            Realtime machine insight, without complexity or lock-in
+          <p className="animate-fade-in-up-delay-1 text-2xl font-medium text-slate-900 md:text-3xl dark:text-white">
+            {hero.subtitle}
           </p>
         </div>
-        <p className="mx-auto mb-10 max-w-3xl text-lg leading-relaxed text-slate-600 md:text-xl dark:text-slate-300">
-          We are building a new generation of industrial intelligence: scalable,
-          affordable and designed to run directly at the edge — close to
-          machines, processes and operations.
-          <br />
-          <br />
-          Our platform enables OEMs, manufacturers and asset owners to gain
-          real-time insight into machine health, energy behaviour and
-          operational performance — without complex IT projects or dependency on
-          large cloud platforms.
-        </p>
-        <div className="mb-8 flex flex-col justify-center gap-4 sm:flex-row">
+        <div className="animate-fade-in-up-delay-1 mx-auto mb-10 max-w-3xl text-lg leading-relaxed text-slate-600 md:text-xl dark:text-slate-300">
+          {hero.description.map((paragraph, index) => (
+            <p key={index} className="mb-4 last:mb-0">
+              {paragraph}
+            </p>
+          ))}
+        </div>
+        <div className="animate-fade-in-up-delay-2 mb-8 flex flex-col justify-center gap-4 sm:flex-row">
           <a
             href="#cta"
-            className="fancy-button rounded-lg bg-emerald-600 px-8 py-3 text-base font-semibold text-white transition hover:bg-emerald-700 hover:shadow-lg"
+            className="fancy-button rounded-lg bg-accent px-8 py-3 text-base font-semibold text-white transition hover:bg-accent-hover hover:shadow-lg"
           >
-            Get started
+            {hero.buttons.primary}
           </a>
           <a
-            href="#features"
-            className="fancy-button rounded-lg border-2 border-emerald-600 px-8 py-3 text-base font-semibold text-emerald-700 transition hover:bg-emerald-50 dark:border-emerald-500 dark:text-emerald-400 dark:hover:bg-emerald-900/30"
+            href="#value-delivered"
+            className="fancy-button rounded-lg border-2 border-accent px-8 py-3 text-base font-semibold text-accent-text transition hover:bg-accent-light dark:border-accent-border-dark dark:text-accent-text-dark dark:hover:bg-accent-highlight/30"
           >
-            Learn more →
+            {hero.buttons.secondary}
           </a>
+        </div>
+        <div className="animate-fade-in-up-delay-2 mt-12 flex justify-center">
+          <img
+            src={realTimeInsightsImage}
+            alt="Real Time Insights"
+            className="rounded-xl shadow-lg"
+          />
         </div>
       </div>
     </section>

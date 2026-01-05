@@ -12,7 +12,7 @@ import {
 
 function FloatingIcons() {
   // Using theme colors for the icons
-  const iconClass = "float-icon text-primary opacity-20" 
+  const iconClass = "float-icon" 
 
   return (
     <>

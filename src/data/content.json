@@ -1,0 +1,189 @@
+{
+  "hero": {
+    "title": "Industrial Edge Intelligence",
+    "subtitle": "Realtime machine insight, without complexity or lock-in",
+    "description": [
+      "We are building a new generation of industrial intelligence: scalable, affordable and designed to run directly at the edge — close to machines, processes and operations.",
+      "Our platform enables OEMs, manufacturers and asset owners to gain real-time insight into machine health, energy behaviour and operational performance — without complex IT projects or dependency on large cloud platforms."
+    ],
+    "buttons": {
+      "primary": "Get started",
+      "secondary": "Learn more →"
+    }
+  },
+  "valueDelivered": {
+    "title": "What This Delivers",
+    "subtitle": "Operational insight that translates directly into value",
+    "description": "Our platform delivers direct operational value:",
+    "list": [
+      "Earlier detection of machine anomalies and degradation",
+      "Fewer unplanned stops and emergency interventions",
+      "Lower energy consumption through continuous insight",
+      "Extended asset lifetime without large reinvestments",
+      "Predictable costs and fast time-to-value"
+    ],
+    "highlights": [
+      "No data science team required.",
+      "No complex IT integration.",
+      "No long-term platform lock-in."
+    ]
+  },
+  "mission": {
+    "title": "Our Mission",
+    "subtitle": "Making advanced industrial AI accessible — without cloud dependency",
+    "paragraphs": [
+      "Our mission is to make advanced AI and machine learning accessible to every production company.",
+      "Too often, industrial intelligence is tied to expensive hardware, heavy cloud infrastructures and external platforms that create long-term dependency and limit control. We believe industrial organisations should retain ownership of their data, their models and their operational decisions.",
+      "By using affordable edge technology and on-device intelligence, we enable organisations of any scale to improve efficiency, reduce energy costs, extend asset lifetime and improve product quality — while keeping full control over their data and systems.",
+      "In doing so, we accelerate both the digitalisation and the sustainability of the manufacturing industry."
+    ]
+  },
+  "platform": {
+    "building": {
+      "title": "What We Are Building",
+      "subtitle": "An integrated edge-native platform for machine health and intelligence",
+      "description": "We are developing an Industrial Edge Intelligence Platform, a fully integrated system, that brings machine monitoring, anomaly detection and digital-twin capabilities directly to the production floor.",
+      "listTitle": "The platform combines:",
+      "list": [
+        "Multi-sensor edge hardware (current, vibration, temperature, vision-ready)",
+        "On-device anomaly detection using TinyML and Edge AI",
+        "Secure dashboards for machine health and operational insight",
+        "Rapid deployment in harsh industrial environments",
+        "A scalable foundation for predictive maintenance and digital twins"
+      ],
+      "footer": "The result is a system that grows in intelligence over time — without increasing operational complexity."
+    },
+    "delivery": {
+      "title": "How We Deliver This",
+      "subtitle": "Plug-and-play SaaS, no upfront investment required",
+      "paragraphs": [
+        "Our solution is delivered as a plug-and-play SaaS platform.",
+        "Edge sensor nodes are installed directly on machines or infrastructure. Intelligence runs locally on the device, and only relevant insights are transmitted. Dashboards provide immediate visibility into machine health and performance.",
+        "There are no large upfront investments. Customers subscribe to the platform and scale usage as value is proven.",
+        "This makes advanced industrial AI accessible, financially predictable and aligned with operational reality."
+      ]
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "From raw signals to actionable insight — at the edge — Edge-First Intelligence by Design",
+    "paragraphs": [
+      "Edge sensor nodes capture machine behaviour directly at the source. TinyML models analyse this data locally and detect deviations and anomalies in real time, even in environments with limited connectivity.",
+      "Only relevant insights and health indicators are transmitted, keeping bandwidth usage, storage requirements and cloud dependency to a minimum. Dashboards provide clear, actionable views for operations and maintenance teams.",
+      "As data accumulates, models mature and enable predictive maintenance and digital-twin applications."
+    ]
+  },
+  "differentiation": {
+    "title": "Why This Is Different",
+    "subtitle": "Edge-first intelligence, designed for real-world industry",
+    "description": "Most industrial AI solutions rely on expensive sensors, centralised cloud processing and long integration projects.",
+    "listTitle": "Our approach is fundamentally different:",
+    "list": [
+      "Edge-first architecture",
+      "Affordable, scalable hardware",
+      "SaaS delivery without lock-in",
+      "Full data ownership for the customer",
+      "No specialised AI teams required"
+    ],
+    "footer": "This allows organisations to start small, validate quickly and scale with confidence — without committing to heavy infrastructure or external platforms."
+  },
+  "whyItMatters": {
+    "title": "Why It Matters",
+    "subtitle": "Reliability, cost control and sustainability in one system — Operational, Financial and Sustainability Impact",
+    "paragraphs": [
+      "Industrial reliability is not only a technical challenge — it is a financial and sustainability challenge.",
+      "Every unplanned stop, wasted kilowatt-hour and prematurely replaced component increases costs and environmental impact."
+    ],
+    "financial": {
+      "title": "Financial impact",
+      "list": [
+        "Reduced downtime and maintenance costs",
+        "Improved asset utilisation",
+        "Lower IT and data-handling expenses"
+      ]
+    },
+    "sustainability": {
+      "title": "Sustainability impact",
+      "list": [
+        "Reduced energy waste",
+        "Lower material consumption",
+        "Fewer emissions through more efficient operations",
+        "Support for a resilient and circular industrial system"
+      ]
+    }
+  },
+  "whoFor": {
+    "title": "Who This Is For",
+    "subtitle": "Built for organisations responsible for critical assets",
+    "description": "Our platform is designed for organisations that operate critical assets:",
+    "cards": [
+      {
+        "title": "OEMs",
+        "description": "Enhancing machines with intelligent monitoring and services"
+      },
+      {
+        "title": "Manufacturers",
+        "description": "Improving reliability, efficiency and energy performance"
+      },
+      {
+        "title": "Asset Owners",
+        "description": "Responsible for uptime and long-term value"
+      }
+    ],
+    "footer": "The platform scales from a single production line to complex industrial sites."
+  },
+  "team": {
+    "title": "Team & Credibility",
+    "subtitle": "Industrial experience combined with deep AI expertise",
+    "paragraphs": [
+      "Controlable is built by a multidisciplinary team combining:",
+      "Our team combines deep industrial experience with advanced AI and embedded systems expertise.",
+      "We bring together senior engineers with decades of experience in industrial automation, embedded systems and machine reliability; specialists in Edge AI and TinyML building models that operate on constrained hardware in real-world conditions; system architects experienced in deploying technology in live industrial environments; and a new generation of highly skilled engineers and graduates trained in modern software, data and AI methodologies.",
+      "This combination enables us to move fast while maintaining industrial-grade robustness.",
+      "Our advisory board further strengthens this foundation, covering manufacturing from large corporate to sme’s, cutting edge digital twins, AI and machine learning applied academic research, legal structuring and financial strategy."
+    ]
+  },
+  "cta": {
+    "title": "Get Involved",
+    "subtitle": "Explore pilots, partnerships and early access",
+    "paragraphs": [
+      "We are currently working with launching customers and industrial partners.",
+      "Organisations interested in early pilots, strategic collaboration or platform integration are invited to get in touch.",
+      "The core platform — hardware, edge intelligence and software — is operational and undergoing real-world validation with industrial use cases."
+    ],
+    "focus": {
+      "title": "Our focus is now on:",
+      "list": [
+        "Field validation in production environments",
+        "Refinement based on operational data",
+        "Scaling towards broader industrial deployment"
+      ]
+    },
+    "email": "info@controlable.ai"
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team",
+    "email": {
+      "title": "Email",
+      "address": "info@controlable.ai"
+    },
+    "phone": {
+      "title": "Phone",
+      "number": "+31 6 18847300",
+      "link": "+31618847300"
+    }
+  },
+  "footer": {
+    "copyright": "Controlable Systems. All rights reserved."
+  },
+  "header": {
+    "title": "Controlable",
+    "nav": {
+      "value": "Value",
+      "platform": "Platform",
+      "team": "Team",
+      "contact": "Contact"
+    }
+  }
+}

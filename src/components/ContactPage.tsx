@@ -1,0 +1,9 @@
+import ContactSection from './ContactSection'
+
+export default function ContactPage() {
+  return (
+    <div className="py-12">
+      <ContactSection />
+    </div>
+  )
+}
