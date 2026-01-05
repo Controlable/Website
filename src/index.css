@@ -126,8 +126,27 @@
   to { opacity: 1; }
 }
 
+@keyframes float-slow {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-25px) translateX(8px) rotate(1deg);
+  }
+  50% {
+    transform: translateY(-45px) translateX(-8px) rotate(-1deg);
+  }
+  75% {
+    transform: translateY(-25px) translateX(6px) rotate(0.5deg);
+  }
+  100% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+}
+
+
 /* Floating Icons Positioning & Animation */
-.float-icon-1 { animation: float-slow 8s ease-in-out infinite; top: 10%; left: 5%; }
+.float-icon-1 { animation: float-slow 8s ease-in-out infinite; top: 10%; left: 5%; animation-delay: 0s; }
 .float-icon-2 { animation: float-slow 10s ease-in-out infinite; top: 30%; right: 8%; animation-delay: 1s; }
 .float-icon-3 { animation: float-slow 12s ease-in-out infinite; top: 60%; left: 10%; animation-delay: 2s; }
 .float-icon-4 { animation: float-slow 11s ease-in-out infinite; top: 50%; right: 5%; animation-delay: 1.5s; }
